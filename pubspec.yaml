@@ -1,0 +1,5 @@
+name: books
+description: A sample 
+
+dependencies:
+    web_ui: any
