@@ -1,12 +1,13 @@
 import 'dart:html';
-import 'package:books/models.dart';
+import 'package:bookstore/models.dart';
 
 List<Book> books = [];
 
 // binding created auto-magically!
 void createNewBook() {
   var input = query("#new-book");
-  books = [(new Book(input.value))]..addAll(books);
+  // books = [(new Book("${input.value}..."))]..addAll(books); // this triggers a change in the dom
+  books.add(new Book(input.value));
   input.value = "";
 }
   

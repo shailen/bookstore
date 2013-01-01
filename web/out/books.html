@@ -3,19 +3,29 @@
 <html><head>
     <meta charset="utf-8">
     <title>Books</title>
+    <link rel="stylesheet" href="../books.css">
+    
   </head>
   <body>
     <h1>Books</h1>
     
     <input id="new-book" type="text" placeholder="add another title">
     <button id="__e-0">Add Book</button>
-      
-    <ul>
-      <template id="__e-3" style="display:none"></template>
-    </ul>
- 
     
+    <ul id="books">
+      <template id="__e-2" style="display:none"></template>
+    </ul>
+      
+    <!-- this is the old way... 
+    <ul>
+      <template iterate='book in books'>
+        <li>{{ book.title }}</li>
+      </template>
+    </ul>
+    -->
+      
+    
+    <script type="text/javascript" src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
     
   
-<script type="text/javascript" src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
 <script type="application/dart" src="books.html_bootstrap.dart"></script></body></html>

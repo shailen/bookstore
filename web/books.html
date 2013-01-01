@@ -4,20 +4,31 @@
   <head>
     <meta charset="utf-8">
     <title>Books</title>
+    <link rel="stylesheet" href="books.css">
+    <link rel="components" href="book_item_component.html">
   </head>
   <body>
     <h1>Books</h1>
     
     <input id="new-book" type="text" placeholder="add another title">
     <button on-click="createNewBook()">Add Book</button>
+    
+    <ul id="books">
+      <template iterate="book in books">
+        <x-book-item book="{{ book }}"></x-book-item>
+      </template>
+    </ul>
       
+    <!-- this is the old way... 
     <ul>
       <template iterate='book in books'>
         <li>{{ book.title }}</li>
       </template>
     </ul>
- 
+    -->
+      
     <script type="application/dart" src="books.dart"></script>
+    <script type="text/javascript" src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
     
   </body>
 </html>
