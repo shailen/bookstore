@@ -1,4 +1,4 @@
-// Auto-generated from book_item_component.html.
+// Auto-generated from book_component.html.
 // DO NOT EDIT.
 
 library x_book_item;

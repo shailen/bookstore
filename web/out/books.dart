@@ -12,7 +12,7 @@ import 'dart:html';
 
 import 'package:bookstore/models.dart';
 
-import 'book_item_component.dart';
+import 'book_component.dart';
 
 
 // Original code
