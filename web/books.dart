@@ -6,12 +6,12 @@ List<Book> books = [];
 // binding created auto-magically!
 void createNewBook() {
   var input = query("#new-book");
-  // books = [(new Book("${input.value}..."))]..addAll(books); // this triggers a change in the dom
   books.add(new Book(input.value));
   input.value = "";
 }
   
 main() {
+  // create some data so the page doesn't look empty
   ["War and Peace", "The Idiot", "Crime and Punishment"].forEach((title) {
     books.add(new Book(title));
   });
